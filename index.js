@@ -16,8 +16,5 @@ const {assert}=require('chai');
     await loginButton.click();
 
     let titleInventory = await driver.findElement(By.css('.title')).getText();
-    assert.equal(titleInventory, 'PRODUCTSX');
-
-    //.title
-    /* await driver.quit(); */
+    assert.equal(titleInventory, 'PRODUCTS');
 })();
